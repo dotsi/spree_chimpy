@@ -40,7 +40,9 @@ module Spree::Chimpy
           {product_id:   variant.id,
            sku:          variant.sku,
            product_name: variant.name,
-           cost:         variant.cost_price.to_f,
+           category_id: variant.product.brand(true).id,
+           category_name: variant.product.brand,
+           cost:         variant.real_price.to_f,
            qty:          line.quantity}
         end
 

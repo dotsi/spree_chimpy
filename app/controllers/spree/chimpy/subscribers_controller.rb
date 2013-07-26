@@ -11,6 +11,7 @@ class Spree::Chimpy::SubscribersController < ApplicationController
       flash[:error] = I18n.t("spree.chimpy.subscriber.failure")
     end
 
-    respond_with @subscriber, location: request.referer
+    #respond_with @subscriber, location: request.referer
+    redirect_to request.referer
   end
 end

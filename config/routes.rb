@@ -1,4 +1,4 @@
-Spree::Core::Engine.routes.draw do
+Spree::Core::Engine.routes.append do
   namespace :chimpy, path: "" do
     resource :subscribers, only: [:create]
   end
