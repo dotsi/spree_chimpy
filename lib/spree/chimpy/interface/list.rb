@@ -48,14 +48,14 @@ module Spree::Chimpy
       def create_segment
         log "Creating segment #{@segment_name}"
 
-        #@segment_id = @api.list_static_segment_add(list_id, @segment_name)
+        @segment_id = @api.list_static_segment_add(list_id, @segment_name)
       end
 
       def find_segment_id
-        #segments = @api.list_static_segments(list_id)
-        #segment  = segments.detect {|segment| segment['name'].downcase == @segment_name.downcase }
+        segments = @api.list_static_segments(list_id)
+        segment  = segments.detect {|segment| segment['name'].downcase == @segment_name.downcase }
 
-        #segment['id'] if segment
+        segment['id'] if segment
       end
 
       def segment_id

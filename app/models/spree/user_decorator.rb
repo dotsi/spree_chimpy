@@ -2,10 +2,10 @@ if Spree.user_class
   Spree.user_class.class_eval do
     attr_accessible :subscribed
 
-    #after_create  :subscribe
-    #around_update :resubscribe
-    #after_destroy :unsubscribe
-    #after_initialize :assign_subscription_default
+    after_create  :subscribe
+    around_update :resubscribe
+    after_destroy :unsubscribe
+    after_initialize :assign_subscription_default
 
     delegate :subscribe, :resubscribe, :unsubscribe, to: :subscription
 
