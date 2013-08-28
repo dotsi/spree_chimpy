@@ -36,7 +36,7 @@ module Spree::Chimpy
       end
 
       def list_id
-        @list_id ||= @api.find_list_id_by_name(@list_name)
+        @list_id ||= "0840fe99b4"#@api.find_list_id_by_name(@list_name)
       end
 
       def segment(email)
