@@ -6,4 +6,5 @@ Deface::Override.new(:virtual_path => "spree/admin/users/_form",
 Deface::Override.new(:virtual_path => "spree/admin/users/show",
                      :name         => "admin_user_show_subscription",
                      :insert_after => "table tr:last",
-                     :partial      => "spree/admin/users/subscription")
+                     :partial      => "spree/admin/users/subscription",
+                     :disabled => true)
