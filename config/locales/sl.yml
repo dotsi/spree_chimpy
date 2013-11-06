@@ -3,7 +3,7 @@ sl:
     chimpy:
       subscribed_label: Prijava na e-novice
       admin_subscribed_label: Prijavljen/a na e-novice
-      subscribe_title: Prejemaj najboljšo ponudbo na email
+      subscribe_title: Prejemajte najboljšo ponudbo na email
       subscribed: Prijavljen
       email:
         label: Email
